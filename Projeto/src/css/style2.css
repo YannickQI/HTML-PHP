@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@500&display=swap');
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: #B83B5E;
+    width: 100%;
+    height: 70px;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-options{
+    width: 962.125;
+    display: flex;
+    gap: 2em;
+    
+}
+.header-options a{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.header-icons{
+    display: flex;
+    gap: 1em;
+    min-width: 64px;
+}
+
+
+
+.title{
+    display: inline-block;
+    font-family: Calmius Sans High;
+    color: #FFC700;
+    font-size: 3rem;
+    font-size: 24px;
+}
+
+@media (max-width: 525px){
+    .header-options a{
+        font-size: 0.6rem;
+    }
+    .header-options{
+        gap: 0.5em;
+    }
+}
+@media (max-width: 670px){
+    .title{
+        font-size: 1.5rem;
+    }
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header-options, .header-icons {
+    margin-top: 10px;
+}
+
+.header-options a, .header-icons a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.linha-produtos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.compoProduto {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imgProduto {
+    position: relative;
+}
+
+.produtoMiniatura {
+    width: 50%;
+    height: auto;
+    max-width: 100%; /* Tamanho desejado para as imagens */
+    max-height: 100%; /* Altura máxima ajustada para manter a proporção */
+    
+}
+
+.produtoMiniatura2 {
+    width: 13%;
+    height: auto;
+    max-width: 100%; /* Tamanho desejado para as imagens */
+    max-height: 100%; /* Altura máxima ajustada para manter a proporção */
+    
+}
+
+@media (max-width: 768px) {
+    .produtoMiniatura {
+        max-width: 100%; 
+    }
+}
+
+.titulo {
+    margin-left: 20px;
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    text-align: start;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;   
+}
+
+.titulo p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.titulo h2 {
+    font-size: 20px;
+    color: #060201;
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-add {
+    background-color:#FFC700;
+    color: #fff;
+    padding: 8px 36px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s;
+    margin-right: 20px;
+}
+
+.btn-add:hover {
+    background-color: #333;
+}

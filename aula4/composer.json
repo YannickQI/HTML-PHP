@@ -1,0 +1,8 @@
+{
+    "autoload": {
+        "psr-4": {
+            "QI\\SistemaDeChamada":"src/"
+        },
+        "files": ["Config.php"]
+    }
+}

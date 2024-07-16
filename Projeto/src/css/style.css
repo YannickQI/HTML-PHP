@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@500&display=swap');
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: #B83B5E;
+    width: 100%;
+    height: 70px;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-options{
+    width: 962.125;
+    display: flex;
+    gap: 2em;
+    
+}
+.header-options a{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.header-icons{
+    display: flex;
+    gap: 1em;
+    min-width: 64px;
+}
+
+
+
+.title{
+    display: inline-block;
+    font-family: Calmius Sans High;
+    color: #FFC700;
+    font-size: 3rem;
+}
+
+@media (max-width: 525px){
+    .header-options a{
+        font-size: 0.6rem;
+    }
+    .header-options{
+        gap: 0.5em;
+    }
+}
+@media (max-width: 670px){
+    .title{
+        font-size: 1.5rem;
+    }
+}
+
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh; 
+    width: 40vw;
+    max-width: 550px;
+    border-radius: 30px;
+    border-style: groove;
+    border-color: black;
+    padding: 20px;
+}
+
+.label_login {
+    font-family: 'Roboto', sans-serif;
+    width: 85%;
+    font-size: larger;
+    margin-bottom: 5px;
+}
+
+.input_login {
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-bottom-style: groove;
+    border-color: rgba(169, 169, 169, 0.311);
+    width: 85%;
+    font-weight: normal;
+    
+}
+
+.input_login:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+}
+
+.form_login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_login {
+    margin-top: 15%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #FFC700;
+    width: 75%;
+    height: 70px;
+    border-radius: 10px;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn_login:hover {
+    width: 75%;
+    height: 75px;
+    background-color: #333;
+}
+
+.btn_login:active {
+    color: black;
+}
